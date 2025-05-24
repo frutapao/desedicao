@@ -1,0 +1,83 @@
+{
+  "project": {
+    "name": "Desedição: Um Sopro de Vida",
+    "quality": 1,
+    "multiple": true
+  },
+  "loader": {
+    "info": "data/info.md",
+    "items": "https://docs.google.com/spreadsheets/d/e/2PACX-1vS7_dGn3W4P7r0oVfc8DvhnsVrwlMFEEzv_1bASXqiqUgjrmFW4GPLRIFGeZXCHQSNuxL6f_tiDYxuL/pub?gid=1936547086&single=true&output=csv",
+    "tsne": "",
+    "textures": {
+      "medium": {
+        "size": 256,
+        "url": "data/sprites/spritesheet.json"
+      },
+      "detail": {
+        "size": 1024,
+        "url": "data/1024/"
+      },
+      "big": {
+        "size": 4096,
+        "url": "data/4096/"
+      }
+    }
+  },
+  "style": {
+    "fontColor": "#ae736f",
+    "fontColorActive": "#fff",
+    "linkColor": "#fff",
+    "fontBackground": "#4e2d28",
+    "textShadow": "1px 1px 1px #fff",
+    "canvasBackground": "#eadbcb",
+    "timelineBackground": "#f2f2e6",
+    "timelineFontColor": "#000",
+    "detailBackground": "#edf4fa",
+    "infoBackground": "#eadbcb",
+    "infoFontColor": "#4e2d28",
+    "searchbarBackground": "#eadbcb"
+  },
+  "projection": {
+    "columns": 3
+  },
+  "detail": {
+    "structure": [
+      {
+        "name": "Identificador",
+        "source": "_id",
+        "display": "column",
+        "type": "text"
+      },
+      {
+        "name": "Título",
+        "source": "_title",
+        "display": "column",
+        "type": "text"
+      },
+      {
+        "name": "Descrição",
+        "source": "_description",
+        "display": "column",
+        "type": "text"
+      },
+      {
+        "name": "Tipo",
+        "source": "_type",
+        "display": "column",
+        "type": "text"
+      },
+      {
+        "name": "Data",
+        "source": "_date",
+        "display": "column",
+        "type": "text"
+      },
+      {
+        "name": "Palavras-chave",
+        "source": "_keywords",
+        "display": "column",
+        "type": "array"
+      }
+    ]
+  }
+}
