@@ -2,12 +2,24 @@
   "project": {
     "name": "Desedição: Um Sopro de Vida",
     "quality": 1,
-    "multiple": true
+    "multiple": false
   },
   "loader": {
     "info": "data/info.md",
     "items": "https://docs.google.com/spreadsheets/d/e/2PACX-1vS7_dGn3W4P7r0oVfc8DvhnsVrwlMFEEzv_1bASXqiqUgjrmFW4GPLRIFGeZXCHQSNuxL6f_tiDYxuL/pub?gid=1936547086&single=true&output=csv",
-    "tsne": "",
+    "layouts": [
+      {
+        "title": "Tipologia",
+        "type": "group",
+        "groupKey": "_type",
+        "columns": 4
+      },
+      {
+        "title": "Similaridade",
+        "url": "data/umap.csv",
+        "scale": 2.0
+      }
+    ],
     "textures": {
       "medium": {
         "size": 256,
